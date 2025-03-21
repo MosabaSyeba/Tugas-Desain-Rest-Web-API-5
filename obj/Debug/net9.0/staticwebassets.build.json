@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "fKiwc1Hjafb+yhg/9Bb58jv8Z1fJg0AuoLIC7R/HWxE=",
+  "Source": "SimpleRestAPI",
+  "BasePath": "_content/SimpleRestAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
