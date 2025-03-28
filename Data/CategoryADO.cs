@@ -6,6 +6,7 @@ using System.Security.Cryptography.Pkcs;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 
+
 namespace SimpleRestAPI.Data
 {
     public class CategoryADO : ICategory

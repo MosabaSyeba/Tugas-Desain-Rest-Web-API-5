@@ -52,6 +52,7 @@ C:\Web Api\SimpleRestAPI\obj\Debug\net9.0\SimpleRestAPI.AssemblyInfo.cs
 C:\Web Api\SimpleRestAPI\obj\Debug\net9.0\SimpleRestAPI.csproj.CoreCompileInputs.cache
 C:\Web Api\SimpleRestAPI\obj\Debug\net9.0\SimpleRestAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Web Api\SimpleRestAPI\obj\Debug\net9.0\SimpleRestAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Web Api\SimpleRestAPI\obj\Debug\net9.0\SimpleRestAPI.sourcelink.json
 C:\Web Api\SimpleRestAPI\obj\Debug\net9.0\scopedcss\bundle\SimpleRestAPI.styles.css
 C:\Web Api\SimpleRestAPI\obj\Debug\net9.0\staticwebassets.build.json
 C:\Web Api\SimpleRestAPI\obj\Debug\net9.0\staticwebassets.development.json

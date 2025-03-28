@@ -2,17 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Identity.Client;
 
-namespace SimpleRestAPI.Data
+namespace SimpleRestAPI.Models
 {
-    public class Course
+    public class ViewCourseWithCategory
     {
-
         public int CourseId { get; set; }
-        public string? CourseName { get; set; }
+        public string CourseName { get; set; } = null!;
         public string? CourseDescription { get; set; }
-        public string? Duration { get; set; }
+        public double Duration { get; set; }
         public int CategoryId { get; set; }
+        public string CategoryName { get; set; } = null!;
     }
 }

@@ -11,6 +11,7 @@ builder.Services.AddSingleton<ICategory, CategoryADO>(); //dengan mengganti ICat
                                                          //maka tidak perlu merubah dari API karena akan dipanggil dari objeknya
 
 builder.Services.AddSingleton<IInstructor, InstructorADO>();
+builder.Services.AddSingleton<ICours, CourseAdo>();
 
 var app = builder.Build(); // Komponen yang digunakan di web REST API
 
@@ -115,6 +116,35 @@ app.MapDelete("api/v1/instructors/{id}", (IInstructor instructorData, int id) =>
     return Results.NoContent();
 }); 
 
+app.MapGet("api/v1/courses", (ICours courseData) =>
+{
+    var courses = courseData.GetCours();
+    return courses;
+});
+
+app.MapGet("api/v1/courses/{id}", (ICours courseData, int id) =>
+{
+    var course = courseData.GetCoursById(id);
+    return course;
+});
+
+app.MapPost("api/v1/courses", (ICours courseData, Course course) =>
+{
+    var newCourse = courseData.AddCours(course);
+    return newCourse;
+});
+
+app.MapPut("api/v1/courses", (ICours courseData, Course course) =>
+{
+    var updatedCourse = courseData.UpdateCours(course);
+    return updatedCourse;
+});
+
+app.MapDelete("api/v1/courses/{id}", (ICours coursData, int id) =>
+{
+    coursData.DeleteCours(id);
+    return Results.NoContent();
+});
 
 app.Run();
 
